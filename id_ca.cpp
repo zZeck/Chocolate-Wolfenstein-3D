@@ -15,12 +15,7 @@ loaded into the data segment
 */
 
 #include <sys/types.h>
-#if defined _WIN32
-    #include <io.h>
-#else
-    #include <sys/uio.h>
-    #include <unistd.h>
-#endif
+#include <unistd.h>
 
 #include "wl_def.h"
 #pragma hdrstop

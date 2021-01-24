@@ -10,19 +10,12 @@
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
-// Win32
-#ifdef _WIN32
-#include <wtypes.h>
-#include "SDL.h"
-#include "SDL_syswm.h"
-#endif
-#if !defined(_WIN32)
-#   include <stdint.h>
-#   include <string.h>
-#   include <stdarg.h>
-#include <SDL/SDL.h>
 
-#endif
+#include "SDL.h"
+#include <stdint.h>
+#include <string.h>
+#include <stdarg.h>
+
 
 
 #if !defined O_BINARY
@@ -58,10 +51,7 @@ typedef uint8_t byte;
 typedef uint16_t word;
 typedef int32_t fixed;
 typedef uint32_t longword;
-// Win32
-#ifndef _WIN32
 typedef int8_t boolean;
-#endif
 typedef void * memptr;
 
 typedef struct
