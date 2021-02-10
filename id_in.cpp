@@ -19,7 +19,7 @@
 
 #include "wl_def.h"
 #include "id_vl.h"
-#include <map>
+#include <unordered_map>
 
 /*
 =============================================================================
@@ -39,7 +39,7 @@ boolean forcegrabmouse;
 
 
 //  Global variables
-std::map<int, boolean> Keyboard = {
+std::unordered_map<int, boolean> Keyboard= {
     {sc_None, false},
     {sc_Return, false},
     {sc_Escape, false},

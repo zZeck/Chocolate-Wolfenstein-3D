@@ -5,7 +5,7 @@
 //  By Jason Blochowiak
 //
 
-#include <map>
+#include <unordered_map>
 
 #ifndef __ID_IN__
 #define __ID_IN__
@@ -137,7 +137,7 @@ typedef struct      {
                                     joyMultXH,joyMultYH;
                     } JoystickDef;
 // Global variables
-extern  std::map<int, boolean>    Keyboard;
+extern  std::unordered_map<int, boolean>    Keyboard;
 extern           boolean    MousePresent;
 extern  volatile boolean    Paused;
 extern  volatile char       LastASCII;

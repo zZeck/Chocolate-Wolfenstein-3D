@@ -24,12 +24,13 @@ CFLAGS += $(CFLAGS_SDL)
 #CFLAGS += -W
 CFLAGS += -Wno-c++11-narrowing
 CFLAGS += -g
+CFLAGS += -O0
 CFLAGS += -Wpointer-arith
 CFLAGS += -Wreturn-type
 CFLAGS += -Wwrite-strings
 CFLAGS += -Wcast-align
-CFLAGS += -std=c++11
-CFLAGS += -stdlib=libc++
+CFLAGS += -std=gnu++11
+#CFLAGS += -stdlib=libc++
 
 CCFLAGS += $(CFLAGS)
 CCFLAGS += -Werror-implicit-function-declaration
