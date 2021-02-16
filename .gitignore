@@ -16,6 +16,8 @@ Backup
 
 *.exe
 *.txt
+*.ii
+*.s
 
 /.vscode
 /build

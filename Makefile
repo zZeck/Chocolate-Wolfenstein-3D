@@ -45,6 +45,7 @@ LDFLAGS += -lSDL2_mixer
 SRCS :=
 SRCS += fmopl.cpp
 SRCS += id_ca.cpp
+SRCS += input_init.cpp
 SRCS += id_in.cpp
 SRCS += id_pm.cpp
 SRCS += id_sd.cpp
