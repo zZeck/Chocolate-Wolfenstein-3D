@@ -1,7 +1,12 @@
 #include <map>
+#include "id_vl.h"
+#include "wl_def.h"
+#include "id_in.h"
+
 #include "SDL.h"
 
-std::map<int, int8_t> Keyboard = {
+
+std::map<int, boolean> Keyboard = {
     {SDLK_UNKNOWN, false},
     {SDLK_RETURN, false},
     {SDLK_ESCAPE, false},

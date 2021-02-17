@@ -16,6 +16,20 @@ loaded into the data segment
 
 #include <sys/types.h>
 #include <unistd.h>
+/*
+    "Is this available on Windows now?"
+    It is in mingw-w64
+    https://github.com/Alexpux/mingw-w64/blob/master/mingw-w64-headers/crt/unistd.h
+
+    mingw-w64 is used by MSYS2
+    MSYS2 is easiest way to build cross platform code bases on windows these days (in my experience)
+    Chocolate Doom uses it
+    https://www.chocolate-doom.org/wiki/index.php/Building_Chocolate_Doom_on_Windows
+    (I've used msys2 to build nBlood, Chocolate Doom, cc65, probably a few other codebases I've forgotten)
+
+    Msys2 doesn't introduce a dll like cygwin, it just provides a *nix like environment for building.
+    Also uses pacman as a package manager which makes installing dev libraries for a build painless.
+*/
 
 #include "wl_def.h"
 #pragma hdrstop

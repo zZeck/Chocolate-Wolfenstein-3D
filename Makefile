@@ -30,6 +30,7 @@ CFLAGS += -Wreturn-type
 CFLAGS += -Wwrite-strings
 CFLAGS += -Wcast-align
 CFLAGS += -std=gnu++11
+CFLAGS += -save-temps
 #CFLAGS += -stdlib=libc++
 
 CCFLAGS += $(CFLAGS)

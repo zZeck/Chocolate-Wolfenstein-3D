@@ -137,7 +137,7 @@ typedef struct      {
                                     joyMultXH,joyMultYH;
                     } JoystickDef;
 // Global variables
-extern  std::map<int, boolean>    Keyboard;
+extern  std::unorderedmap<int, boolean>    Keyboard;
 extern           boolean    MousePresent;
 extern  volatile boolean    Paused;
 extern  volatile char       LastASCII;
